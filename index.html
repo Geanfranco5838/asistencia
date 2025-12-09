@@ -11,68 +11,58 @@
 
     <!-- LOGIN -->
     <section id="login" class="screen active">
-        <h1>Iniciar sesión</h1>
-        <input id="email" type="email" placeholder="Correo">
-        <input id="password" type="password" placeholder="Contraseña">
-        <button onclick="login()">Ingresar</button>
-    </section>
+    <h1>Iniciar Sesión</h1>
+    <input id="email" type="email" placeholder="Correo institucional">
+    <input id="password" type="password" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+</section>
+
 
     <!-- DASHBOARD -->
     <section id="dashboard" class="screen">
-        <h1>Panel del Docente</h1>
-        <div class="cards">
-            <div class="card" onclick="goTo('asistencia')">Tomar Asistencia</div>
-            <div class="card" onclick="goTo('reportes')">Reportes</div>
-            <div class="card" onclick="goTo('admin')">Administración</div>
-        </div>
-    </section>
+    <h1>Panel del Docente</h1>
+    <div class="cards">
+        <div class="card" onclick="goTo('asistencia')">Tomar Asistencia</div>
+        <div class="card" onclick="goTo('reportes')">Reportes</div>
+        <div class="card" onclick="goTo('admin')">Administración</div>
+    </div>
+</section>
+
 
     <!-- ASISTENCIA -->
     <section id="asistencia" class="screen">
-        <h1>Control de Asistencia</h1>
-        <table>
-            <tr><th>Alumno</th><th>Estado</th></tr>
-            <tr><td>Juan Pérez</td>
-                <td>
-                    <select>
-                        <option>Presente</option>
-                        <option>Ausente</option>
-                        <option>Tarde</option>
-                    </select>
-                </td>
-            </tr>
-            <tr><td>María López</td>
-                <td>
-                    <select>
-                        <option>Presente</option>
-                        <option>Ausente</option>
-                        <option>Tarde</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-        <button onclick="goTo('dashboard')">Volver</button>
-    </section>
+    <h1>Control de Asistencia</h1>
+    <table>
+        <tr><th>Alumno</th><th>Estado</th></tr>
+        <tr><td>Juan Pérez</td>
+            <td><select><option>Presente</option><option>Ausente</option><option>Tarde</option></select></td></tr>
+        <tr><td>María López</td>
+            <td><select><option>Presente</option><option>Ausente</option><option>Tarde</option></select></td></tr>
+    </table>
+    <button onclick="goTo('dashboard')">Volver</button>
+</section>
+
 
     <!-- REPORTES -->
-    <section id="reportes" class="screen">
-        <h1>Reportes</h1>
-        <p>Asistencias del mes</p>
-        <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['P','A','T'],datasets:[{data:[20,5,3]}]}}" />
-        <button onclick="goTo('dashboard')">Volver</button>
-    </section>
+   <section id="reportes" class="screen">
+    <h1>Reportes</h1>
+    <img style="width:100%; max-width:400px; display:block; margin:auto;"
+        src="https://quickchart.io/chart?c={type:'bar',data:{labels:['P','A','T'],datasets:[{data:[20,5,3]}]}}">
+    <button onclick="goTo('dashboard')">Volver</button>
+</section>
+
 
     <!-- ADMIN -->
     <section id="admin" class="screen">
-        <h1>Administración</h1>
-        <p>Gestión de usuarios</p>
-        <ul>
-            <li>Registrar Alumno</li>
-            <li>Registrar Docente</li>
-            <li>Registrar Curso</li>
-        </ul>
-        <button onclick="goTo('dashboard')">Volver</button>
-    </section>
+    <h1>Administración</h1>
+    <ul>
+        <li>Registrar Alumno</li>
+        <li>Registrar Docente</li>
+        <li>Registrar Curso</li>
+    </ul>
+    <button onclick="goTo('dashboard')">Volver</button>
+</section>
+
 
 </div>
 
