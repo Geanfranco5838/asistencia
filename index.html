@@ -39,7 +39,10 @@
         <tr><td>María López</td>
             <td><select><option>Presente</option><option>Ausente</option><option>Tarde</option></select></td></tr>
     </table>
+    <div class="center">
     <button onclick="goTo('dashboard')">Volver</button>
+</div>
+
 </section>
 
 
@@ -53,15 +56,30 @@
 
 
     <!-- ADMIN -->
-    <section id="admin" class="screen">
+   <section id="admin" class="screen">
     <h1>Administración</h1>
-    <ul>
-        <li>Registrar Alumno</li>
-        <li>Registrar Docente</li>
-        <li>Registrar Curso</li>
-    </ul>
-    <button onclick="goTo('dashboard')">Volver</button>
+
+    <div class="cards" style="grid-template-columns: repeat(2,1fr); margin-bottom:20px;">
+        <div class="card" onclick="alert('Registrar Alumno (En desarrollo)')">Registrar Alumno</div>
+        <div class="card" onclick="alert('Registrar Docente (En desarrollo)')">Registrar Docente</div>
+        <div class="card" onclick="alert('Registrar Curso (En desarrollo)')">Registrar Curso</div>
+        <div class="card" onclick="alert('Ver Usuarios (En desarrollo)')">Ver Usuarios</div>
+    </div>
+
+    <h2 style="text-align:center; color:#0a4fa3;">Usuarios registrados</h2>
+
+    <table>
+        <tr><th>Nombre</th><th>Rol</th></tr>
+        <tr><td>Juan Pérez</td><td>Alumno</td></tr>
+        <tr><td>María Rivera</td><td>Docente</td></tr>
+        <tr><td>Admin General</td><td>Administrador</td></tr>
+    </table>
+
+    <div class="center">
+        <button onclick="goTo('dashboard')">Volver</button>
+    </div>
 </section>
+
 
 
 </div>
