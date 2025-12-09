@@ -1,65 +1,119 @@
+/* Fondo general */
 body {
     margin: 0;
-    font-family: Arial;
-    background: #e7f3ff;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
+    font-family: 'Segoe UI', Arial;
+    background: #e8f2ff;
+    display: flex;
+    justify-content: center;
     padding-top: 40px;
 }
 
-.screen {
-    display: none;
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: none;
 }
 
+/* Cada pantalla */
+.screen {
+    display: none;
+    padding: 20px;
+}
+
+/* Pantalla activa */
 .active {
     display: block;
 }
 
+/* Estilos generales */
 h1 {
     color: #0a4fa3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* LOGIN */
+#login {
+    max-width: 380px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 input, button, select {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 8px;
     border: 1px solid #9cc8ff;
 }
 
+/* Botones */
 button {
     background: #0a4fa3;
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 }
 
+button:hover {
+    background: #083c7d;
+}
+
+/* Dashboard */
 .cards {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding: 10px;
 }
 
 .card {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
-    width: 30%;
     text-align: center;
-    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    font-size: 17px;
+    color: #0a4fa3;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     cursor: pointer;
+    transition: 0.2s;
 }
 
+.card:hover {
+    background: #dceaff;
+}
+
+/* Tablas */
 table {
     width: 100%;
     background: white;
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    border-collapse: collapse;
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #d8e6ff;
 }
+
+/* Listas */
+ul {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    list-style: none;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #d8e6ff;
+}
+
