@@ -43,22 +43,26 @@ h1 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-input, button, select {
+input, select {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin: 8px 0;
     font-size: 15px;
     border-radius: 8px;
     border: 1px solid #9cc8ff;
 }
 
-/* Botones */
 button {
+    padding: 10px 22px;       /* Botón más pequeño */
+    font-size: 15px;
+    border-radius: 8px;
     background: #0a4fa3;
     color: white;
     border: none;
     cursor: pointer;
-    transition: 0.2s;
+    display: inline-block;    /* Evita que se estire */
+    width: auto;              /* Tamaño ajustado al contenido */
+    margin-top: 10px;
 }
 
 button:hover {
@@ -115,5 +119,8 @@ ul {
 ul li {
     padding: 10px 0;
     border-bottom: 1px solid #d8e6ff;
+}
+.center {
+    text-align: center;
 }
 
