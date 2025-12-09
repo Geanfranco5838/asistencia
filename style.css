@@ -123,4 +123,20 @@ ul li {
 .center {
     text-align: center;
 }
+.small-card {
+    text-align: center;
+    padding: 15px;
+}
+
+.small-card h2 {
+    font-size: 18px;
+    color: #0a4fa3;
+    margin-bottom: 8px;
+}
+
+.number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #083c7d;
+}
 
