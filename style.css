@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #e7f3ff;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.screen {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+h1 {
+    color: #0a4fa3;
+}
+
+input, button, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #9cc8ff;
+}
+
+button {
+    background: #0a4fa3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
