@@ -49,10 +49,63 @@
     <!-- REPORTES -->
    <section id="reportes" class="screen">
     <h1>Reportes</h1>
-    <img style="width:100%; max-width:400px; display:block; margin:auto;"
-        src="https://quickchart.io/chart?c={type:'bar',data:{labels:['P','A','T'],datasets:[{data:[20,5,3]}]}}">
-    <button onclick="goTo('dashboard')">Volver</button>
+
+    <!-- Tarjetas resumidas -->
+    <div class="cards" style="grid-template-columns: repeat(3,1fr); margin-bottom: 25px;">
+        <div class="card small-card">
+            <h2>Asistencias Hoy</h2>
+            <p class="number">32</p>
+        </div>
+
+        <div class="card small-card">
+            <h2>Faltas Hoy</h2>
+            <p class="number">8</p>
+        </div>
+
+        <div class="card small-card">
+            <h2>Asistencia Total</h2>
+            <p class="number">87%</p>
+        </div>
+    </div>
+
+    <!-- Gráfico -->
+    <div class="card" style="padding: 25px;">
+        <h2 style="text-align:center; margin-bottom:10px;">Asistencias Semanales</h2>
+        <canvas id="chartAsistencia"></canvas>
+    </div>
+
+    <!-- Tabla -->
+    <div class="card" style="margin-top:25px;">
+        <h2 style="text-align:center;">Registro Detallado</h2>
+        <table>
+            <tr>
+                <th>Fecha</th>
+                <th>Alumno</th>
+                <th>Estado</th>
+            </tr>
+            <tr>
+                <td>01/11/2025</td>
+                <td>Juan Pérez</td>
+                <td>Asistió</td>
+            </tr>
+            <tr>
+                <td>01/11/2025</td>
+                <td>María López</td>
+                <td>Faltó</td>
+            </tr>
+            <tr>
+                <td>01/11/2025</td>
+                <td>Pedro Ramos</td>
+                <td>Tardanza</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="center">
+        <button onclick="goTo('dashboard')">Volver</button>
+    </div>
 </section>
+
 
 
     <!-- ADMIN -->
